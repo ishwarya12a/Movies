@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <style>
+        a {
+            color: white;
+        }
+
+        table,
+        tr,
+        th,td {
+            text-align: left;
+        }
+
+        .button {
+            color: white;
+            background-color: rgb(38, 38, 196);
+            padding: 10px;
+            width: 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-title">
+        <h2>Movie Cruiser</h2>
+        <h3><a href="movie-list-admin.html">Movies</a></h3>
+    </div>
+    <div class="section">
+        <h1 class="table-head">Edit Movie</h1>
+        <table>
+            <tr>
+                <th><label for="title">Title</label></th>
+            </tr>
+            <tr>
+                <td><input type="text" name="title" id="title"></td>
+            </tr>
+            <tr>
+                <th><label for="gross">Gross($)</label></th>
+                <th><label for="active">Active</label></th>
+                <th><label for="date">Date Of Launch</label></th>
+                <th><label for="genre">Genre</label></th>
+            </tr>
+            <tr>
+                <td><input type="text" name="gross" id="box"></td>
+                <td><input type="radio" name="active" value="Yes" id="activeYes">Yes<input type="radio" name="active" value="No"
+                        id="activeNo">No</td>
+                <td><input type="text" name="date" id="date"></td>
+                <td><select id="genre">
+                        <option value="superhero">Superhero</option>
+                        <option value="science">Science Fiction</option>
+                        <option value="romance">Romance</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="thriller">Thriller</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" value="teaser" id="teaser">Has Teaser</td>
+            </tr>
+            <tr>
+                <td><button type="button" id="save" class="button">Save</button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer">
+        <h4>Copyright &copy 2019</h4>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
